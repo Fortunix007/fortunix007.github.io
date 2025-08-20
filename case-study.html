@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandy Tshuma - Case Studies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .case-study-header {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        .case-study-nav {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        .case-study-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            display: none;
+        }
+        .case-study-card.active {
+            display: block;
+        }
+        .case-study-img {
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .nav-pills .nav-link {
+            color: #2c3e50;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 10px 15px;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .achievement-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .achievement-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .achievement-list li:before {
+            content: "\f26a";
+            font-family: "bootstrap-icons";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        .tech-badge {
+            background-color: #e8f4fc;
+            color: #3498db;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Case Study Header -->
+    <header class="case-study-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Business Analyst Case Studies</h1>
+            <p class="lead">Detailed overview of projects delivering measurable business results</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Case Study Navigation -->
+        <div class="case-study-nav">
+            <h3 class="mb-4">Select a Case Study</h3>
+            <ul class="nav nav-pills justify-content-center flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" data-target="case-study-1">Finance CRM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="case-study-2">Healthcare Scheduling</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="case-study-3">Mental Health Assessment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="case-study-4">Process Modeling</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="case-study-5">Stakeholder Workshops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="case-study-6">ActiveCampaign Integration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="case-study-7">Compliance Mapping</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="case-study-8">Business Case Development</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Case Study 1: Finance CRM Transformation -->
+        <div class="case-study-card active" id="case-study-1">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Finance Sector CRM Transformation</h2>
+                    <p class="text-muted">Caldwell Foster Advisory | March 2025 - Present</p>
+                    <p class="lead">Led a comprehensive CRM transformation project delivering 20% cost savings and 15% faster client onboarding through Agile methodologies and stakeholder alignment.</p>
+                    
+                    <h4 class="mt-4">The Challenge</h4>
+                    <p>The organization faced significant challenges with outdated CRM systems causing inefficient client onboarding processes, poor data management, and lack of integration between finance and IT systems.</p>
+                    
+                    <h4>The Solution</h4>
+                    <p>Implemented a comprehensive Agile-driven approach including stakeholder workshops, BPMN process modeling, and detailed requirements engineering. Developed 36+ user stories with 67% UAT alignment.</p>
+                    
+                    <h4>Key Achievements</h4>
+                    <ul class="achievement-list">
+                        <li>20% cost savings through process optimization</li>
+                        <li>15% faster client onboarding time</li>
+                        <li>30% improvement in requirements clarity</li>
+                        <li>25% reduction in process errors</li>
+                        <li>67% user acceptance testing alignment</li>
+                        <li>100% test coverage with traceability</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <div>
+                        <span class="tech-badge">ActiveCampaign</span>
+                        <span class="tech-badge">Jira</span>
+                        <span class="tech-badge">Confluence</span>
+                        <span class="tech-badge">Balsamiq</span>
+                        <span class="tech-badge">Lucidchart</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="CRM Dashboard" class="case-study-img">
+                    <div class="nav-buttons">
+                        <button class="btn btn-primary btn-next-case-study w-100">Next Case Study <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 2: Patient Scheduling System Optimization -->
+        <div class="case-study-card" id="case-study-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Patient Scheduling System Optimization</h2>
+                    <p class="text-muted">NHS Sussex Partnership | Jan 2020 - Dec 2024</p>
+                    <p class="lead">Reduced missed appointments by 12% and improved scheduling efficiency by 10% through process analysis and stakeholder engagement.</p>
+                    
+                    <h4 class="mt-4">The Challenge</h4>
+                    <p>The healthcare provider struggled with high rates of missed appointments (over 15%), inefficient scheduling processes, and poor coordination between clinical teams and administrative staff.</p>
+                    
+                    <h4>The Solution</h4>
+                    <p>Conducted comprehensive stakeholder analysis with clinical teams, service managers, and patients to identify pain points. Documented workflows for 500+ patient interactions yearly.</p>
+                    
+                    <h4>Key Achievements</h4>
+                    <ul class="achievement-list">
+                        <li>12% reduction in missed appointments</li>
+                        <li>10% improvement in scheduling efficiency</li>
+                        <li>Enhanced patient experience and satisfaction</li>
+                        <li>Improved resource utilization across departments</li>
+                        <li>Streamlined booking and cancellation processes</li>
+                        <li>Better coordination between clinical and admin teams</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <div>
+                        <span class="tech-badge">Microsoft Office</span>
+                        <span class="tech-badge">NHS internal systems</span>
+                        <span class="tech-badge">Lucidchart</span>
+                        <span class="tech-badge">Trello</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/portfolio/healthcare2.jpg" alt="Healthcare Scheduling" class="case-study-img">
+                    <div class="nav-buttons">
+                        <button class="btn btn-outline-primary btn-prev-case-study"><i class="bi bi-arrow-left"></i> Previous</button>
+                        <button class="btn btn-primary btn-next-case-study">Next <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 3: Digital Mental Health Assessment Implementation -->
+        <div class="case-study-card" id="case-study-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Digital Mental Health Assessment Implementation</h2>
+                    <p class="text-muted">NHS Sussex Partnership | Jun 2022 - Feb 2024</p>
+                    <p class="lead">Trained 50+ clinicians on new digital assessment tools, improving adoption rates by 25% and enhancing patient care delivery.</p>
+                    
+                    <h4 class="mt-4">The Challenge</h4>
+                    <p>Clinical staff were resistant to adopting new digital assessment tools due to lack of training, concerns about technology reliability, and disruption to established workflows.</p>
+                    
+                    <h4>The Solution</h4>
+                    <p>Developed comprehensive training programs and documentation for 50+ clinicians, created user-friendly guides and support materials, and facilitated hands-on workshops.</p>
+                    
+                    <h4>Key Achievements</h4>
+                    <ul class="achievement-list">
+                        <li>Trained 50+ clinicians on digital assessment tools</li>
+                        <li>25% improvement in tool adoption rates</li>
+                        <li>30% reduction in assessment administration time</li>
+                        <li>Improved data accuracy and reporting capabilities</li>
+                        <li>Enhanced patient engagement through digital tools</li>
+                        <li>Streamlined mental health assessment processes</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <div>
+                        <span class="tech-badge">Microsoft Word</span>
+                        <span class="tech-badge">NHS systems</span>
+                        <span class="tech-badge">Training platforms</span>
+                        <span class="tech-badge">Survey tools</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/portfolio/healthcare3.jpg" alt="Mental Health Assessment" class="case-study-img">
+                    <div class="nav-buttons">
+                        <button class="btn btn-outline-primary btn-prev-case-study"><i class="bi bi-arrow-left"></i> Previous</button>
+                        <button class="btn btn-primary btn-next-case-study">Next <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 4: Process Modeling & Optimization -->
+        <div class="case-study-card" id="case-study-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Process Modeling & Optimization</h2>
+                    <p class="text-muted">Financial Services Client | September 2024 - February 2025</p>
+                    <p class="lead">Streamlined operational processes resulting in 30% reduction in processing time and 20% cost savings through detailed process mapping and optimization.</p>
+                    
+                    <h4 class="mt-4">The Challenge</h4>
+                    <p>The client had complex, inefficient operational processes with multiple handoffs, redundant steps, and lack of standardization across departments, leading to delays and increased costs.</p>
+                    
+                    <h4>The Solution</h4>
+                    <p>Conducted detailed process analysis using BPMN 2.0 standards, identified bottlenecks, and designed optimized workflows. Implemented standardized procedures and automation where applicable.</p>
+                    
+                    <h4>Key Achievements</h4>
+                    <ul class="achievement-list">
+                        <li>30% reduction in process cycle time</li>
+                        <li>20% operational cost savings</li>
+                        <li>Standardized processes across 5 departments</li>
+                        <li>Eliminated 15 redundant process steps</li>
+                        <li>Improved cross-departmental collaboration</li>
+                        <li>Created comprehensive process documentation</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <div>
+                        <span class="tech-badge">Lucidchart</span>
+                        <span class="tech-badge">Visio</span>
+                        <span class="tech-badge">Jira</span>
+                        <span class="tech-badge">Confluence</span>
+                        <span class="tech-badge">BPMN 2.0</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Process Modeling" class="case-study-img">
+                    <div class="nav-buttons">
+                        <button class="btn btn-outline-primary btn-prev-case-study"><i class="bi bi-arrow-left"></i> Previous</button>
+                        <button class="btn btn-primary btn-next-case-study">Next <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 5: Stakeholder Engagement Workshops -->
+        <div class="case-study-card" id="case-study-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Stakeholder Engagement Workshops</h2>
+                    <p class="text-muted">Healthcare Provider | April 2023 - August 2023</p>
+                    <p class="lead">Facilitated 20+ stakeholder workshops improving requirements gathering accuracy by 40% and reducing project rework by 25%.</p>
+                    
+                    <h4 class="mt-4">The Challenge</h4>
+                    <p>The organization struggled with misaligned expectations, unclear requirements, and frequent project scope changes due to inadequate stakeholder engagement early in projects.</p>
+                    
+                    <h4>The Solution</h4>
+                    <p>Designed and facilitated structured stakeholder workshops using proven techniques to elicit requirements, build consensus, and ensure alignment between business and technical teams.</p>
+                    
+                    <h4>Key Achievements</h4>
+                    <ul class="achievement-list">
+                        <li>Conducted 20+ stakeholder workshops</li>
+                        <li>40% improvement in requirements accuracy</li>
+                        <li>25% reduction in project rework</li>
+                        <li>Improved stakeholder satisfaction scores</li>
+                        <li>Enhanced communication between teams</li>
+                        <li>Developed reusable workshop templates</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <div>
+                        <span class="tech-badge">Miro</span>
+                        <span class="tech-badge">Jamboard</span>
+                        <span class="tech-badge">Microsoft Teams</span>
+                        <span class="tech-badge">Zoom</span>
+                        <span class="tech-badge">Confluence</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Stakeholder Workshops" class="case-study-img">
+                    <div class="nav-buttons">
+                        <button class="btn btn-outline-primary btn-prev-case-study"><i class="bi bi-arrow-left"></i> Previous</button>
+                        <button class="btn btn-primary btn-next-case-study">Next <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 6: ActiveCampaign Integration Project -->
+        <div class="case-study-card" id="case-study-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>ActiveCampaign Integration Project</h2>
+                    <p class="text-muted">E-commerce Client | November 2024 - January 2025</p>
+                    <p class="lead">Integrated ActiveCampaign with existing systems, improving marketing automation efficiency by 35% and increasing lead conversion by 18%.</p>
+                    
+                    <h4 class="mt-4">The Challenge</h4>
+                    <p>The client's marketing automation was inefficient with disconnected systems, manual processes, and inability to track customer journeys effectively, resulting in missed opportunities.</p>
+                    
+                    <h4>The Solution</h4>
+                    <p>Designed and implemented a comprehensive integration between ActiveCampaign and the client's CRM, e-commerce platform, and customer support systems, creating a unified customer view.</p>
+                    
+                    <h4>Key Achievements</h4>
+                    <ul class="achievement-list">
+                        <li>35% improvement in marketing automation efficiency</li>
+                        <li>18% increase in lead conversion rates</li>
+                        <li>Integrated 4 previously disconnected systems</li>
+                        <li>Created 15+ automated customer journey workflows</li>
+                        <li>Reduced manual data entry by 80%</li>
+                        <li>Improved customer segmentation and targeting</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <div>
+                        <span class="tech-badge">ActiveCampaign</span>
+                        <span class="tech-badge">Zapier</span>
+                        <span class="tech-badge">API Integration</span>
+                        <span class="tech-badge">Salesforce</span>
+                        <span class="tech-badge">Shopify</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="ActiveCampaign Integration" class="case-study-img">
+                    <div class="nav-buttons">
+                        <button class="btn btn-outline-primary btn-prev-case-study"><i class="bi bi-arrow-left"></i> Previous</button>
+                        <button class="btn btn-primary btn-next-case-study">Next <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 7: Compliance Mapping & Documentation -->
+        <div class="case-study-card" id="case-study-7">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Compliance Mapping & Documentation</h2>
+                    <p class="text-muted">Financial Services | July 2023 - October 2023</p>
+                    <p class="lead">Mapped 50+ regulatory requirements to business processes, reducing compliance risks by 40% and improving audit readiness.</p>
+                    
+                    <h4 class="mt-4">The Challenge</h4>
+                    <p>The organization faced increasing regulatory scrutiny with poorly documented compliance processes, making audits stressful and time-consuming while exposing the company to compliance risks.</p>
+                    
+                    <h4>The Solution</h4>
+                    <p>Conducted a comprehensive analysis of regulatory requirements, mapped them to business processes, and developed clear documentation, controls, and monitoring mechanisms.</p>
+                    
+                    <h4>Key Achievements</h4>
+                    <ul class="achievement-list">
+                        <li>Mapped 50+ regulatory requirements to processes</li>
+                        <li>40% reduction in compliance risks</li>
+                        <li>Improved audit readiness and efficiency</li>
+                        <li>Developed comprehensive compliance documentation</li>
+                        <li>Implemented ongoing compliance monitoring</li>
+                        <li>Trained staff on compliance requirements</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <div>
+                        <span class="tech-badge">Confluence</span>
+                        <span class="tech-badge">SharePoint</span>
+                        <span class="tech-badge">Lucidchart</span>
+                        <span class="tech-badge">Microsoft Office</span>
+                        <span class="tech-badge">GRC Software</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Compliance Mapping" class="case-study-img">
+                    <div class="nav-buttons">
+                        <button class="btn btn-outline-primary btn-prev-case-study"><i class="bi bi-arrow-left"></i> Previous</button>
+                        <button class="btn btn-primary btn-next-case-study">Next <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 8: Business Case Development -->
+        <div class="case-study-card" id="case-study-8">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Business Case Development</h2>
+                    <p class="text-muted">Technology Startup | May 2023 - July 2023</p>
+                    <p class="lead">Developed compelling business cases for 3 major initiatives, securing $2.5M in funding and executive approval for strategic projects.</p>
+                    
+                    <h4 class="mt-4">The Challenge</h4>
+                    <p>The startup struggled to secure funding and executive approval for key initiatives due to poorly articulated business cases that lacked clear ROI analysis and strategic alignment.</p>
+                    
+                    <h4>The Solution</h4>
+                    <p>Conducted detailed market research, financial analysis, and stakeholder interviews to develop comprehensive business cases with clear value propositions, ROI calculations, and risk assessments.</p>
+                    
+                    <h4>Key Achievements</h4>
+                    <ul class="achievement-list">
+                        <li>Developed 3 comprehensive business cases</li>
+                        <li>Secured $2.5M in funding</li>
+                        <li>100% approval rate for presented initiatives</li>
+                        <li>Improved stakeholder buy-in for projects</li>
+                        <li>Created reusable business case templates</li>
+                        <li>Established standardized evaluation criteria</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <div>
+                        <span class="tech-badge">Microsoft Excel</span>
+                        <span class="tech-badge">PowerPoint</span>
+                        <span class="tech-badge">Financial Modeling</span>
+                        <span class="tech-badge">Market Research Tools</span>
+                        <span class="tech-badge">SWOT Analysis</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Business Case Development" class="case-study-img">
+                    <div class="nav-buttons">
+                        <button class="btn btn-outline-primary btn-prev-case-study"><i class="bi bi-arrow-left"></i> Previous</button>
+                        <button class="btn btn-primary btn-next-case-study">Next <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation tabs functionality
+            const navLinks = document.querySelectorAll('.nav-link');
+            const caseStudies = document.querySelectorAll('.case-study-card');
+            const caseStudyIds = Array.from(caseStudies).map(study => study.id);
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links and cards
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    caseStudies.forEach(study => study.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Show corresponding case study
+                    const targetId = this.getAttribute('data-target');
+                    document.getElementById(targetId).classList.add('active');
+                    
+                    // Scroll to top of case studies
+                    document.querySelector('.case-study-nav').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+            
+            // Next/Previous buttons functionality
+            const nextButtons = document.querySelectorAll('.btn-next-case-study');
+            const prevButtons = document.querySelectorAll('.btn-prev-case-study');
+            
+            nextButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Find current active case study
+                    const currentActive = document.querySelector('.case-study-card.active');
+                    const currentIndex = caseStudyIds.indexOf(currentActive.id);
+                    
+                    // Calculate next index (cycle to first if at end)
+                    const nextIndex = (currentIndex + 1) % caseStudyIds.length;
+                    const nextId = caseStudyIds[nextIndex];
+                    
+                    // Update active classes
+                    currentActive.classList.remove('active');
+                    document.getElementById(nextId).classList.add('active');
+                    
+                    // Update navigation
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('data-target') === nextId) {
+                            link.classList.add('active');
+                        }
+                    });
+                    
+                    // Scroll to top
+                    document.querySelector('.case-study-nav').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+            
+            prevButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Find current active case study
+                    const currentActive = document.querySelector('.case-study-card.active');
+                    const currentIndex = caseStudyIds.indexOf(currentActive.id);
+                    
+                    // Calculate previous index (cycle to last if at beginning)
+                    const prevIndex = (currentIndex - 1 + caseStudyIds.length) % caseStudyIds.length;
+                    const prevId = caseStudyIds[prevIndex];
+                    
+                    // Update active classes
+                    currentActive.classList.remove('active');
+                    document.getElementById(prevId).classList.add('active');
+                    
+                    // Update navigation
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('data-target') === prevId) {
+                            link.classList.add('active');
+                        }
+                    });
+                    
+                    // Scroll to top
+                    document.querySelector('.case-study-nav').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+            
+            // Back to top button
+            const backToTopButton = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.display = 'flex';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
